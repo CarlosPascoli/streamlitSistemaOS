@@ -2,12 +2,9 @@ import streamlit as st
 import requests
 import json
 import datetime
-from dotenv import load_dotenv
 import os
 
-load_dotenv()  # Carrega as variáveis de ambiente do arquivo .env
-
-link = os.getenv("FIREBASE_URL")  # Acessa a variável de ambiente
+link = os.environ.get("FIREBASE_URL")  # Acessa a variável de ambiente
 
 lista_de_tecnicos = ["Carlos Alberto de Pascoli Filho", "Carlos Alberto de Pascoli", "Gabriela Pereira Evangelista"]
 
